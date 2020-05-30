@@ -23,6 +23,7 @@
 */
 
 ;(function(window, document, undefined){
+  const _ = require("lodash");
   var classes = [];
   
 
