@@ -23,7 +23,6 @@
 */
 
 ;(function(window, document, undefined){
-  const _ = require("lodash");
   var classes = [];
   
 
@@ -687,6 +686,7 @@ document.addEventListener('mouseout', _ => draggableItems.forEach(element => ele
 
 // FIGURE LINKS
 document.querySelectorAll('.js-figure-link').forEach((l) => {
+  const _ = require("lodash");
   l.addEventListener('click', _ => {
     const snipcartButton = _.target.closest('.snipcart-add-item');
     if (!snipcartButton) {
